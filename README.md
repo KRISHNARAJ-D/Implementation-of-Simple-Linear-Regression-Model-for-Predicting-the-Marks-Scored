@@ -50,7 +50,11 @@ lr.intercept_
 
 ## Output:
 ### DATASET
+### df.head()
 ![ML DATASET](https://github.com/KRISHNARAJ-D/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119559695/1dff08a2-b3df-4af6-9184-5f0c09c72d8a)
+### df.tail()
+![df tail](https://github.com/KRISHNARAJ-D/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119559695/318a631c-bb04-416a-8711-c313b0c643ff)
+
 ### GRAPH OF PLOTTED DATA
 ![ML PLOTTED DATA](https://github.com/KRISHNARAJ-D/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119559695/5cd75057-401a-450d-934a-20806c4c1adc)
 ### PERFORMING LINEAR REGRESSION
