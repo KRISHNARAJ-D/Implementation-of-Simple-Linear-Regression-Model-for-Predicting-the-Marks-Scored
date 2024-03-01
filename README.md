@@ -23,6 +23,7 @@ RegisterNumber: 212222230070
 ```PYTHON
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
 import pandas as pd
 df = pd.read_csv("/content/score_updated.csv")
 df.head(10)
@@ -46,6 +47,14 @@ plt.ylabel('Scores')
 plt.plot(X_train,lr.predict(X_train),color='red')
 lr.coef_
 lr.intercept_
+mse=mean_absolute_error(Y_test,y_pred)
+print('MSE = ',mse)
+mae=mean_absolute_error(Y_test,y_pred)
+print('MAE = ',mae)
+rmse=np.sqrt(mse)
+print("RMSE= ",rmse)
+r2=r2_score(Y_test,y_pred)
+print("r2= ",r2)
 ```
 
 ## Output:
@@ -66,9 +75,8 @@ lr.intercept_
 ![PREDICTING LINE OF REG](https://github.com/KRISHNARAJ-D/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119559695/95acbc8b-5cfd-4ef9-acbc-dc7ed5fdf2be)
 ### COEFFICIENT AND INTERCEPT VALUES
 ![VALUES ML](https://github.com/KRISHNARAJ-D/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119559695/d33a2ee4-afa2-4fbc-9d51-a1a93759e543)
-
-
-
+### MSE, MAE, RMSE AND R2 VALUES
+![rmse value](https://github.com/KRISHNARAJ-D/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119559695/6729b6b4-0afa-47a7-b2d4-ba5b8581647a)
 
 
 
